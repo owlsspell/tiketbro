@@ -38,7 +38,8 @@ export default function HomePage() {
                 height={408}
                 src={image1.src}
                 alt=''
-                className='w-full sm:rounded-[32px]'
+                imgClassName='sm:rounded-[32px]'
+                className='w-full'
               />
             </div>
           </Container>

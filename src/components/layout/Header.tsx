@@ -25,13 +25,16 @@ export default function Header() {
   return (
     <header className='sticky top-0 z-50 bg-white md:mb-16 md:pb-10 '>
       <div className='layout flex h-14 items-center justify-between md:items-baseline'>
-        <UnstyledLink href='/' className='w-1/5 font-bold hover:text-gray-600'>
+        <UnstyledLink
+          href='/'
+          className='max-w-2/8 font-bold hover:text-gray-600'
+        >
           <NextImage src={logo.src} alt='image' width={135} height={24} />
         </UnstyledLink>
-        <nav className='w-full max-w-672'>
+        <nav className='ml-auto mr-auto w-full max-w-672'>
           <ul
             className={
-              'absolute top-10 right-0 w-max flex-col justify-around bg-white px-8 py-4 text-[16px] md:relative md:top-0 md:flex md:w-full md:flex-row md:py-0 lg:px-20 xl:px-12' +
+              'absolute top-10 right-0 w-max flex-col justify-between bg-white px-8 py-4 text-[16px] md:relative md:top-0 md:flex md:w-full md:flex-row md:py-0 xl:ml-4 xl:pl-12' +
               (open ? '' : ' hidden')
             }
           >
