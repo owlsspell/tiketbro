@@ -7,6 +7,7 @@ export default function Card({ article }: { article: Article }) {
     <div className='rounded md:max-w-xs'>
       <NextImage
         className='flex w-full justify-center'
+        imgClassName='w-full'
         src={article.image}
         alt=''
         width='320'
